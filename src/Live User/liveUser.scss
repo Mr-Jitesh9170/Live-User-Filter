@@ -1,0 +1,83 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  height: 100vh;
+}
+
+.liveUser-contai {
+  width: 300px;
+  height: 460px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .header {
+    color: #fff;
+    height: 30%;
+    padding: 15px 14px;
+    background-color: blueviolet;
+
+    .header1 {
+      margin: 8px 0;
+      text-align: center;
+
+      p {
+        font-size: 13px;
+        margin: 10px 0;
+        color: yellow;
+      }
+    }
+
+    input {
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      padding: 8px 10px;
+    }
+  }
+
+  .hero-content {
+    padding: 25px 14px;
+    height: 70%;
+    overflow-y: scroll; /* Use overflow-y instead of overflow */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .userData {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .img {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 100%;
+      }
+
+      .userAbout {
+        :nth-child(2) {
+          margin: 3px 0;
+        }
+      }
+    }
+  }
+
+  /* Add scrollbar styles for WebKit browsers */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #a9e70c36;
+  }
+}
